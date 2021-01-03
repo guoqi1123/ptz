@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>index</title>
+<title>Python from Zero</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12947,13 +12947,8 @@ ul.typeahead-list  > li > a.pull-right {
 /*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
-    pre { line-height: 125%; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-.highlight .hll { background-color: #ffffcc }
-.highlight { background: #f8f8f8; }
+    .highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
@@ -13121,7 +13116,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-from-Zero">Python from Zero<a class="anchor-link" href="#Python-from-Zero">&#182;</a></h1><p><a href="scholar.harvard.edu/qguo">Qi Guo</a>, <a href="mailto:qguo@seas.harvard.edu">qguo@seas.harvard.edu</a></p>
+<h1 id="Python-from-Zero">Python from Zero<a class="anchor-link" href="#Python-from-Zero">&#182;</a></h1><p><a href="https://scholar.harvard.edu/qguo">Qi Guo</a>, <a href="mailto:qguo@seas.harvard.edu">qguo@seas.harvard.edu</a></p>
 
 </div>
 </div>
@@ -13138,7 +13133,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This Python tutorial is designated for people with zero background in computer programming. It is specially targeted for people in non-engineering areas such as social sciences, medical sciences, finance, art, etc., with focus in data analysis. The tutorial consists of existing online materials filtered by the author, and customly developed exercises. The tutorial is actively under development, and the author welcomes all suggestions and feedbacks.</p>
+<p>This Python tutorial is designated for people with zero background in computer programming. It is specially targeted for people in non-engineering areas such as social sciences, medical sciences, finance, art, etc. The tutorial consists of existing online materials filtered by the author, and customly developed exercises. The tutorial is actively under development, and the author welcomes all suggestions and feedbacks.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>How to use this tutorial:</strong> If you do not have any coding experiences in Python, please follow every section and especially exercises.</p>
 
 </div>
 </div>
@@ -13215,7 +13218,16 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Exercise 2.3.1.</strong></p>
-<p>Read through <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">this</a> tutorial on Jupyter Notebook, starting from <code>Creating Your First Notebook</code> to before <code>Keyboard Shortcuts</code>. This allows you to create a first executable Python notebook with a few lines of Python code -- how exciting!</p>
+<p>Read through <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">this</a> tutorial on Jupyter Notebook, starting from <code>Creating Your First Notebook</code> to before <code>Kernels</code>. This allows you to create a first executable Python notebook with a few lines of Python code -- how exciting!</p>
+<p>Note: Pay attention to the concepts of <strong>start-up directory</strong>, <strong>.ipynb</strong> and <strong>cells</strong>. Try the following exercises after you read the tutorial.</p>
+<ol>
+<li><p>What is the start-up directory of the Jupyter Notebook in your machine?</p>
+</li>
+<li><p>Create a new ".ipynb" file in your Jupyter Notebook with a name of your choice.</p>
+</li>
+<li><p>In the new ".ipynb" file, copy and run the sample code and markdown in the webpage.</p>
+</li>
+</ol>
 
 </div>
 </div>
@@ -13234,10 +13246,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 </pre></div>
 
     </div>
@@ -13260,18 +13272,18 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2016</span><span class="p">,</span><span class="mi">2017</span><span class="p">,</span><span class="mi">2018</span><span class="p">,</span><span class="mi">2019</span><span class="p">]</span> <span class="c1"># year</span>
 <span class="n">GDP_rate</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.57</span><span class="p">,</span> <span class="mf">2.22</span><span class="p">,</span> <span class="mf">3.18</span><span class="p">,</span> <span class="mf">2.33</span><span class="p">]</span> <span class="c1"># US GDP annual growth rate</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span> <span class="c1"># define a new figure</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">GDP_rate</span><span class="p">)</span> <span class="c1"># input the data for X and Y axis </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">GDP_rate</span><span class="p">)</span> <span class="c1"># input the data for horizontal and vertical axis </span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;US Annual GDP Growth Rate&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Growth Rate (%)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">T</span><span class="p">)</span> <span class="c1"># set </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">T</span><span class="p">)</span> <span class="c1"># set the ticks of the horizontal axis to be year number</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -13291,13 +13303,389 @@ div#notebook {
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYUAAAEWCAYAAACJ0YulAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4wLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvqOYd8AAAG6ZJREFUeJzt3Xm4XHWd5/H3xxAUBQ2SyJIAsWkcG5iBaFhdYBgcCEtD2y5BRxZ7RBBstR1HdGwVfbpFRx3Q+JiOgkAjm4IYBUREdgRMIoYljQakJQ3IZU/CIiGf+eP87rEob27Vzb2nKsvn9Tz13Drn/M6pb517b33q/M4m20RERAC8qN8FRETEmiOhEBERtYRCRETUEgoREVFLKERERC2hEBERtYRCrPMk7SNpSb/rWJNJOkrS9f2uI/ovobAek2RJf9k27rOSzm4Z/qSk30laJmmJpPO7WO7Vkh6T9OIm6h5rqpwgaaGkpyQ9WN7DzJY2V0t6RtJSSU9Kmi/pxNb3WNbdc2VdPS7pRkl7DvO620s6T9JAWeZvJX1d0pSG3+/U8rvfYBTLuFfS0+W9PijpDEkb9+r1ozkJhVglSUcC7wH2s70xMB24ssM8U4E3AQb+uuESx8rXgA8DHwU2AyYDnwIOaGt3gu1NgC1L25nApZLU0ub8sq4mAdcDF7VNB6CE8c3A/cA02y8H3gDcDbxxqCLXwA/RQ8p73QWYBnyiz/XEGEgoxHB2BS63fTeA7Qdtz+kwzxHATcAZwJGtE8q3yW9IuqR8475Z0nYt0y3p2PKN+bHSVmVa+xbMC75tSjpa0qKy3Hskvb+bNyjpNcAHgJm2r7D9tO3nbV9v+6ih5rG93PbVVKG3J3DQEG2eA84EtqAKmnafBW6w/Q+2l5R5HrJ9iu3zSm37lK2zj0t6EPhOGf8+SYslPSpprqStyviTJH29PB8vabmkL5XhjcqWzqbAtaWGx8s3/XprRtKXy7r/naQZ3axD2w8Cl1OFw+ByDpL0q7IFdJ+kz7bMMuTrS3pv+R0+JulySdt28/oxthIKMZybgCMkfUzSdEnjupjnCOC75bG/pM3bph8OnARsCiwG/qlt+sFUYbQz8A5g/y5rfajM+3LgaOD/SXpdF/PtC9xne16Xr1Oz/XtgHtWW0QuUbqWjgCW2Hx5i9v2AC7t4mS2AVwLbAsdI2hf4AtW62RL4d+C80vYaYJ/yfFfgQWDvMrwncJftx4A3l3ETbG9s+xdleHfgLmAi8CXgtKG2coZ4r1OAGVS/z0HLqf4WJlCF5nGSDivT/uz1y7RPAm+l2sq6Dji302vH2EsoxCrZPhv4INUH8zXAQ5JOXFV7SW+k+vC6wPZ8qq6Qd7U1u8j2LbZXUAXHLm3TT7b9ePnAvWqI6auq9RLbd7tyDfBThviwHsJEqg/P1vexpOwTeKaLb6v3U31oD3qHpMeB+4DXA4cNOVfb65Z9GoPfnL/V0m4l8Bnbz9p+Gng3cLrtBbafpeqy2bN02/0C2F7SZlQfvKcBk0tf/95Uv8Ph/Lvtb9l+nmorZ0ugPdRbXSxpaXmvDwGfGZxg+2rbt9leaXsh1Qf83qtYDsD7gS/YXlT+Nv4Z2CVbC72XUFi/PQ+Mbxs3HnhucMD2d23vR/WN71jgc5JW9e39SOCnLd+Mz6GtC4kXfgA/BbTvnOw0fUiSZki6qXSpPA4cSPXB28kjVB9+NdtTyrwvBjp9U54MPNoyfIHtCbZfZXvfEo4dX9f2LNsTgFN44e9kwPYzLcNbUW0dDM63rCxrcgmNeVQfvm+mCoEbqfZVdBMK9bq3/VR5Otz6P6zsY9kHeC0t61vS7pKuKjvRn6D62xnu97EtcGoJxsep1qmo1m/0UEJh/fZ7YGrbuFfT8qEzyPZztr8HLAR2ap8uaSOqLo29y9EoDwIfAXaWtPMY1LoceGnL8BYtr/1iqq6YLwOblw/XS+n8gQ7wc2CKpOkjLUjS1lRbA9eNdF6qHfZv7aJd+2WM76f6AB2s4WVU+yz+o4y6hqpLbBrwyzK8P7Abf+rLH9NLI5ctszOo1v+gc4C5wNa2XwHM5k+/j6Fe/z7g/SVQBx8b2b5xLGuNzhIK67fzgU9JmiLpRZL2Aw4Bvg/1sesHSdqkTJ8B7Eh11Ey7w6i2PHag6vLZBfgrqg/MI8ag1luBN0vaRtIreOGRLhtSfasfAFaUOv97Nwu1fRfwL8B5kt5SdsiOA/Za1TySXippb+CHwC1UATRSnwXeJOmrkiaX5U6kWmfDOQc4WtIuJQz/GbjZ9r1l+jVU6/tO238Ergb+J/A72wOlzQBVt9RfrEbdq3IK8BZJg919mwCP2n5G0m68sBtxqNefDXxC0o4Akl4h6e1jWF90KaGwfvscVffC9cBjVDsX32379jL9Saqdf78HHi/Tj7M91ElORwLfsf37cpTSg+WolFnAuzXKwyltX0EVYguB+cCPW6YtBf4euKC8j3dRfUvt1vFUh6V+larbYgnweeCdVO990KzSh/4Hqg/BC4EDbK9cjffzG2APYArw67LcG6i2BP5xmPmuLNMvBB4AtqM6NHbQjcBG/Gmr4E7gmZbhwa6hfwJuKN01e4y0/iHqGgDOaqn9A1RdjUuBT1P9blb5+rZ/AHyRKpyfBG6n2nkdPabcZCciIgZlSyEiImoJhYiIqCUUIiKillCIiIjamnaBrY4mTpzoqVOn9ruMiIi1yvz58x+2PalTu7UuFKZOncq8eSO+TE1ExHpN0p+dlDqUdB9FREQtoRAREbWEQkRE1BIKERFRSyhEREQtoRAREbWEQkRE1BIKERFRSyhERERtrTujOWJtNvXES/pdQl/de/JB/S4hOsiWQkRE1BIKERFRSyhEREQtoRAREbWEQkRE1BIKERFRSyhEREStsVCQ9BJJt0j6taQ7JJ00RBtJ+pqkxZIWSnpdU/VERERnTZ689iywr+1lksYD10u6zPZNLW1mANuXx+7AN8vPiIjog8a2FFxZVgbHl4fbmh0KnFXa3gRMkLRlUzVFRMTwGt2nIGmcpFuBh4ArbN/c1mQycF/L8JIyrn05x0iaJ2newMBAcwVHRKznGg0F28/b3gWYAuwmaae2JhpqtiGWM8f2dNvTJ02a1ESpERFBj44+sv04cDVwQNukJcDWLcNTgPt7UVNERPy5Jo8+miRpQnm+EbAf8G9tzeYCR5SjkPYAnrD9QFM1RUTE8Jo8+mhL4ExJ46jC5wLbP5Z0LIDt2cClwIHAYuAp4OgG64mIiA4aCwXbC4FpQ4yf3fLcwPFN1RARESOTM5ojIqKWUIiIiFpCISIiagmFiIioJRQiIqKWUIiIiFpCISIiagmFiIioJRQiIqKWUIiIiFpCISIiagmFiIioJRQiIqKWUIiIiFpCISIiagmFiIioJRQiIqKWUIiIiFpCISIiagmFiIioJRQiIqKWUIiIiFpCISIiagmFiIioNRYKkraWdJWkRZLukPShIdrsI+kJSbeWx6ebqiciIjrboMFlrwA+anuBpE2A+ZKusH1nW7vrbB/cYB0REdGlxrYUbD9ge0F5vhRYBExu6vUiImL0erJPQdJUYBpw8xCT95T0a0mXSdpxFfMfI2mepHkDAwMNVhoRsX5rPBQkbQxcCHzY9pNtkxcA29reGfg6cPFQy7A9x/Z029MnTZrUbMEREeuxRkNB0niqQPiu7Yvap9t+0vay8vxSYLykiU3WFBERq9bk0UcCTgMW2f7qKtpsUdohabdSzyNN1RQREcNr8uijNwDvAW6TdGsZ90lgGwDbs4G3AcdJWgE8Dcy07QZrioiIYTQWCravB9ShzSxgVlM1RETEyOSM5oiIqCUUIiKillCIiIhaQiEiImoJhYiIqDV5SGpExJiaeuIl/S6hr+49+aDGXyNbChERUUsoRERELaEQERG1jvsUJE0BZgJvAraiuhzF7cAlwGW2VzZaYURE9MywoSDpO1Q3xvkx8EXgIeAlwGuAA4D/I+lE29c2XWhERDSv05bCV2zfPsT424GLJG1IucBdRESs/YYNhaECQdJ2wEtt32b7j8DipoqLNU8OCWz+kMCIfhrReQqSPgn8Z2ClpJW239NMWRER0Q/DHn0k6YOSxrWM2tn24bbfDezcbGkREdFrnQ5JfQz4iaRDyvBPJV0j6Trg8mZLi4iIXhs2FGyfDRwC7CLph8A8YAZwsO2P9aC+iIjooW5OXtsOOB94P3ACcAqwUZNFRUREf3Q6T+GM0mYj4G7b75M0DfiWpFtsf74HNUZERI90Ovpomu2dAST9CsD2r4BDJB3adHEREdFbnULhJ5KuATYEzmmdYPuHjVUVERF90enktY9Lejmw0vayHtUUERF90uk8hf8BLFtVIEjaTtIbG6ksIiJ6rlP30WbAryTNB+YDA1QXxPtLYG/gYeDEoWaUtDVwFrAFsBKYY/vUtjYCTgUOBJ4CjrK9YLXfTUREjEqn7qNTJc0C9gXeAPwXqktnLwLeY/v3w8y+Avio7QWSNgHmS7rC9p0tbWYA25fH7sA3y8+IiOiDjtc+sv08cEV5dM32A8AD5flSSYuoLsPdGgqHAmfZNnCTpAmStizzRkREj/XkzmuSpgLTgJvbJk0G7msZXlLGRUREHzQeCpI2Bi4EPmz7yfbJQ8ziIZZxjKR5kuYNDAw0UWZERNBwKEgaTxUI37V90RBNlgBbtwxPAe5vb2R7ju3ptqdPmjSpmWIjIqK7UJC0uaTTJF1WhneQ9Hcd5hFwGrDI9ldX0WwucIQqewBPZH9CRET/dLulcAbVpbK3KsO/AT7cYZ43AO8B9pV0a3kcKOlYSceWNpcC91Ddve1bwAdGUnxERIytbu+8NtH2BZI+AWB7haTnh5vB9vUMvc+gtY2B47usISIiGtbtlsJySZtRdgIPdvU0VlVERPRFt1sK/0DV/7+dpBuAScDbG6sqIiL6ottQuIPqshb/iapL6C56dI5DRET0Trcf7L+wvcL2HbZvt/0c8IsmC4uIiN7rdOe1LajOMN6o3HFtcMfxy4GXNlxbRET0WKfuo/2Bo6hOKms912Ap8MmGaoqIiD7pdJXUM4EzJf2t7Qt7VFNERPRJVzuabV8o6SBgR6r7KQyO/1xThUVERO91e5mL2cA7gQ9S7Vd4O7Btg3VFREQfdHv00V62jwAes30SsCcvvJBdRESsA7oNhafLz6ckbQU8B7y6mZIiIqJfuj157ceSJgD/F1hAdbmLbzdWVURE9EW3O5o/X55eKOnHwEts59pHERHrmBFfqsL2s8BukkZ0z+aIiFjzDRsKkvaV9BtJyySdXW6uMw84Gfhmb0qMiIhe6bSl8BXgGGAz4PvATcC/2n79Km6vGRERa7FO+xRs++ry/GJJA7ZPbbimiIjok06hMEHSW1uG1TqcrYWIiHVLp1C4BjhkFcMGEgoREeuQThfEO7pXhURERP/l7mkREVFLKERERC2hEBERtW6vfYSkvYCprfPYPquBmhoz9cRL+l1CX9178kH9LiEi1nBdhYKkfwW2A24Fni+jDawyFCSdDhwMPGR7pyGm7wP8EPhdGXVRbtoTEdFf3W4pTAd2sO0RLPsMYBbDBAdwne2DR7DMiIhoULf7FG4HthjJgm1fCzw64ooiIqJvht1SkPQjqm6iTYA7Jd0CPDs43fZfj/L195T0a+B+4H/ZvmMVdRxDdQ0mttlmm1G+ZERErEqn7qMvN/jaC4BtbS+TdCBwMbD9UA1tzwHmAEyfPn0kXVgRETECw3Yf2b7G9jXAgYPPW8eN5oVtP2l7WXl+KTBe0sTRLDMiIkan230Kbxli3IzRvLCkLSSpPN+t1PLIaJYZERGj02mfwnHAB4DtJC1smbQJcEOHec8F9gEmSloCfAYYD2B7NvA24DhJK4CngZkjPLopIiLGWKd9CucAlwFfAE5sGb/U9rBHFtk+vMP0WVSHrEZExBqi01VSnwCekLQYeA1wo+3lPaksIiJ6rtt9Cr8DDgfmSbpF0lckHdpgXRER0QddhYLt022/F/ivwNnA28vPiIhYh3R77aNvAzsAfwCuo9pJvKDBuiIiog+67T7aDBgHPE516YqHba9orKqIiOiLrrYUbP8NgKS/AvYHrpI0zvaUJouLiIje6rb76GDgTcCbgU2Bn1N1I0VExDqk20tnzwCuBU61fX+D9URERB912310vKTNgV0lvQ64xfZDzZYWERG91tWOZklvB26hOhT1HcDNkt7WZGEREdF73XYffQrYdXDrQNIk4GfA95sqLCIieq/bQ1Jf1NZd9MgI5o2IiLVEt1sKP5F0OXBuGX4ncGkzJUVERL90u6P5Y5LeCrwREDDH9g8arSwiInquYyhIGgdcbns/4KLmS4qIiH7puF/A9vPAU5Je0YN6IiKij7rdp/AMcJukK4D6fgq2/76RqiIioi+6DYVLyiMiItZh3e5oPrPpQiIiov+G3acg6VBJx7cM3yzpnvLIGc0REeuYTjua/zcwt2X4xcCuwD7AcQ3VFBERfdKp+2hD2/e1DF9v+xHgEUkva7CuiIjog05bCpu2Dtg+oWVw0tiXExER/dQpFG6W9L72kZLeT3XV1IiIWId06j76CHCxpHcBC8q411PtWzhsuBklnQ4cDDxke6chpgs4FTgQeAo4yvaC9nYREdE7w4ZCuTLqXpL2BXYsoy+x/fMuln0GMAs4axXTZwDbl8fuwDfLz4iI6JNuz1P4OdV9mbtm+1pJU4dpcihwlm0DN0maIGlL2w+M5HUiImLs9POeCJOB1iOblpRxf0bSMZLmSZo3MDDQk+IiItZH/QwFDTHOQzW0Pcf2dNvTJ03KQU8REU3pZygsAbZuGZ4C3N+nWiIigv6GwlzgCFX2AJ7I/oSIiP7q9iqpIybpXKrLYUyUtAT4DDAewPZsqtt5Hggspjok9eimaomIiO40Fgq2D+8w3cDxw7WJiIje6mf3UURErGESChERUUsoRERELaEQERG1hEJERNQSChERUUsoRERELaEQERG1hEJERNQSChERUUsoRERELaEQERG1hEJERNQSChERUUsoRERELaEQERG1hEJERNQSChERUUsoRERELaEQERG1hEJERNQSChERUUsoRERErdFQkHSApLskLZZ04hDT95H0hKRby+PTTdYTERHD26CpBUsaB3wDeAuwBPilpLm272xrep3t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
+<img src="data:image/png;base64,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
 "
 >
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you are able to reproduce the figure, excellent! You now have your Python environment all set and we are ready to dive deeper into Python programming and solve more interesting problems.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-Programming-with-Python">3. Programming with Python<a class="anchor-link" href="#3.-Programming-with-Python">&#182;</a></h2><p>Human languages have words, sentences and grammars -- computer languages do too! Python has syntax, variables, functions and so on. This section aims to introduce and help you practice these concepts.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.1.-Keywords">3.1. Keywords<a class="anchor-link" href="#3.1.-Keywords">&#182;</a></h3><p>Python has about 20 keywords that you will frequently use. They are reserved for special purposes in the program. So don't define your variables using these words, which will confuse the computer! And they are very simple English words! If you type a keyword in the Jupyter Notebook, they will appear <strong>bold</strong>.</p>
+<p><strong>Exercise 3.1.1.</strong></p>
+<p>Read through <a href="https://www.programiz.com/python-programming/keyword-list">this</a> webpage on the Python keywords.</p>
+<ol>
+<li><p>Understand the meaning of the following 22 keywords: <code>True, False</code>, <code>None</code>, <code>and, or, not</code>, <code>as</code>, <code>break, continue</code>, <code>def</code>, <code>del</code>, <code>if, else, elif</code>, <code>for</code>, <code>from, import</code>, <code>in</code>, <code>is</code>, <code>return</code>, <code>while</code>. You are encouraged to copy the sample codes in the webpage to a Jupyter Notebook to play with them. Here you just need to understand the meaning of each keyword. You don't have to know how to use them.</p>
+</li>
+<li><p>You can optionally skip the rest of keywords, which are not often used.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.2.-Syntax">3.2. Syntax<a class="anchor-link" href="#3.2.-Syntax">&#182;</a></h3><p>Syntax describes the structure of a Python program. People have to write code following rules in the syntax to be understood by the computer. Python has very simple syntax requirements compared to other computer languages.</p>
+<p><strong>Exercise 3.2.1.</strong></p>
+<p>Read through <a href="https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html">this</a> webpage on the basic Python syntax. You do not have to understand the meaning of the code -- just focus on how the code is structured. Pay attention to the concepts <strong>comments</strong>, <strong>indentation</strong> and <strong>parenthesis</strong>. Work on the following questions:</p>
+<ol>
+<li><p>What are comments? It is critical for an good programmer to write concise and helpful comments. Brainstorm what you should write about in comments.</p>
+</li>
+<li><p>What are indentations? What are the differences between the two code snippets below?</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Snippet 1</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Snippet 2</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What is the use of parenthesis? What are the differences between the two code snippets below? This is just a mathematics problem. </li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Snippet 1</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Snippet 1</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="o">*</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.3.-Control-flow">3.3. Control flow<a class="anchor-link" href="#3.3.-Control-flow">&#182;</a></h3><p>The control flow is what differs a computer program from a list of commands to the computer. A computer program can have <em>conditional</em> and <em>looping</em> structures that are not sequentially executed as in a list of commands. This section talks about how to build these <em>conditions</em> and <em>loops</em> in Python.</p>
+<p><strong>Exercise 3.3.1.</strong> Your first actual coding exercise!!</p>
+<p>Read through this <a href="https://jakevdp.github.io/WhirlwindTourOfPython/07-control-flow-statements.html">webpage</a> on control flow. You will learn about the conditional statements <code>if, else, elif</code> and loops <code>for, while</code>. Try the following two coding tasks that use what you just learned!</p>
+<ol>
+<li>Write a Python program to find maximum between two numbers. </li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># write a python program to find the maximum between a and b, feel free to change the values</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="c1">## YOUR CODE HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Write a Python program that finds the maximum in a list of numbers.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># write a python program to find the maximum in a, feel free to change the values</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+
+<span class="c1">## YOUR CODE HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.4.-Data-types-and-structures">3.4. Data types and structures<a class="anchor-link" href="#3.4.-Data-types-and-structures">&#182;</a></h3><p><a href="https://en.wikipedia.org/wiki/Data_structureF">Data structures</a> are formats of data storage in the computer. It is one of the most fundamental topics in computer science. In Python, we have a series of data structures.</p>
+<p><strong>Exercise 3.4.1.</strong></p>
+<p>Read through <a href="https://jakevdp.github.io/WhirlwindTourOfPython/05-built-in-scalar-types.html">this</a> webpage on Python scalar data types. This will allow you to get familiar with the scalar data types in Python. Try to tell the data types of <code>guess_my_data_type</code> in each of the following scenarios. You can verify your answer by running <code>print(type(guess_my_data_type))</code> for each scenario.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scenario 1</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">guess_my_data_type</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scenario 2</span>
+<span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">guess_my_data_type</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scenario 3</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">guess_my_data_type</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scenario 4</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">guess_my_data_type</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Exercise 3.4.2.</strong></p>
+<p>Read through [this] webpage on</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.5.-Python-packages-for-data-science">3.5. Python packages for data science<a class="anchor-link" href="#3.5.-Python-packages-for-data-science">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This section introduces</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
